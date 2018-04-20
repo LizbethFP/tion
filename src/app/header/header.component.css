@@ -1,0 +1,49 @@
+.data-user {
+  display: inline-block;
+}
+.profile-date {
+    line-height: 8px;
+    font-size: 15px;
+}
+.profile {
+    position: absolute;
+    width: 10em;
+    right: 7em;
+    margin-top: 0.6em;
+    color: #626262;
+}
+a {
+    color: #9AAE04;
+}
+.welcome {
+    font-weight: 600;
+}
+.data-user p {
+  line-height: 8px;
+}
+nav {
+    border-bottom: 1.5px solid #EBEBEF;
+    width: 100vw;
+}
+.circle, .circle img {
+    width: 4em;
+    height: auto;
+    border-radius: 50%;
+}
+.float-right {
+    right: 0;
+    position: absolute;
+}
+.data-user, .circle {
+    display: inline-block;
+}
+.lnr-alarm {
+    font-size: 28px;
+    color: #626262;
+}
+.ring {
+    position: absolute;
+    text-align: center;
+    padding-top: 1.5em;
+    right: 5em;
+}

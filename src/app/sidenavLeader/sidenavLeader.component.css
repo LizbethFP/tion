@@ -1,0 +1,25 @@
+.icon-size {
+    font-size: 1.8rem;
+}
+.nav {
+    background-color: #FAF9FF;
+    border-right: 1.5px solid #EBEBEF;
+    height: 100vh;
+}
+.nav-link:focus, .nav-link:active, .nav-link:visited, .nav-link {
+    background-color: #FAF9FF;
+    color: #9AAE04;
+}
+.nav-link {
+    padding: 0;
+    margin: 0.7em 0;
+}
+.tag {
+    position: absolute;
+    width: 1em;
+    height: 4em;
+    background-color: #9AAE04;
+    margin-top: 0.7em;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}

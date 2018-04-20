@@ -1,0 +1,205 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-12 col-md-7">
+      <div class="background-white box">
+        <div class="row">
+          <div class="col-xs-12">
+            <ng-container *ngFor="let contact of data.proyects">
+              <div class="row card d-inline">
+                <div class="card col-12 ">
+                  <div class="card-body">
+                    <img class="logo-business" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/BCP.svg/1200px-BCP.svg.png" alt="logo">
+                    <h5 class="card-title">Proyecto</h5>
+                    <p class="projectToWork">
+                      <span class="lnr lnr-briefcase"></span>{{contact.proyectName}}</p>
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title">Lider: {{contact.contactName}}</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">Description: {{contact.description}}</h6>
+                    <p class="card-text">Direccion: {{contact.location}}</p>
+                    <p class="business-date">{{contact.contactEmail}}</p>
+                  </div>
+                </div>
+                <br>
+                <br>
+              </div>
+            </ng-container>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="co-12 col-md-5">
+      <h6 class="p-2 my-3 font-weight-bold">Publicaciones</h6>
+      <div id="accordion">
+        <div class="card">
+          <div class="card-header bg-tabs" id="headingOne">
+            <h5 class="mb-0">
+              <button class="btn btn-link bg-tabs font-size-collapse" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true"
+                aria-controls="collapseOne">
+                <span class="font-weight-bold mr-1">
+                  <span class="lnr lnr-pushpin"></span>
+                </span> Noticias
+              </button>
+            </h5>
+          </div>
+          <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+            <div class="card-body">
+              Jose Antonio Muñiz, gerente de Área de Medios de Pago y Financiamiento al Consumo del BCP, aclaro que las tarjetas de crédito
+              y personales, serán usadas muchas veces en el mundial.
+              <div class="row justify-content-center mt-2 py-2 color-collapse-secundary font-weight-bold">
+                <span class="pointer">
+                  Comentar
+                  <span class="mx-2 font-size-collapse">
+                    <span class="lnr lnr-bubble"></span>
+                  </span>
+                </span>
+                <span class="pointer">
+                  Me gusta
+                  <span class="mx-2 font-size-collapse">
+                    <span class="lnr lnr-heart heart-color"></span>
+                  </span>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header bg-tabs" id="headingTwo">
+            <h5 class="mb-0">
+              <button class="btn btn-link bg-tabs font-size-collapse collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false"
+                aria-controls="collapseTwo">
+                <span class="font-weight-bold mr-1">
+                  <span class="lnr lnr-gift"></span>
+                </span>
+                Cumpleaños
+              </button>
+            </h5>
+          </div>
+          <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+            <div class="card-body">
+              <ul>
+                <li>
+                  <span class="mr-2 font-size-span">
+                    <span class="lnr lnr-leaf"></span>
+                  </span> Rosa Manrrique Area: RRHH
+                </li>
+                <li>
+                  <span class="mr-2 font-size-span">
+                    <span class="lnr lnr-leaf"></span>
+                  </span> Maria Gutierrez Area: Desarrollo
+                </li>
+                <li>
+                  <span class="mr-2 font-size-span">
+                    <span class="lnr lnr-leaf"></span>
+                  </span> Jorje Edquen Area: Design
+                </li>
+              </ul>
+              <div class="row justify-content-center mt-2 py-2 color-collapse-secundary font-weight-bold">
+                Comentar
+                <span class="mx-2 font-size-collapse">
+                  <span class="lnr lnr-bubble"></span>
+                </span> Me gusta
+                <span class="mx-2 font-size-collapse">
+                  <span class="lnr lnr-heart heart-color"></span>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header bg-tabs" id="headingThree">
+            <h5 class="mb-0">
+              <button class="btn btn-link bg-tabs font-size-collapse collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false"
+                aria-controls="collapseThree">
+                <span class="font-weight-bold mr-1">
+                  <span class="lnr lnr-bookmark"></span>
+                </span>
+                Eventos
+              </button>
+            </h5>
+          </div>
+          <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+            <ng-container *ngFor="let element of dataEvents.events">
+              <div class="card-body text-center">
+                <h6 class="text-uppercase">{{element.eventName}}</h6>
+                <p class="font-weight-bold m-0">{{element.date}}, {{element.tyme}}</p>
+                <p class="m-0">Dirección: {{element.address}}</p>
+                <p>Lugar: {{element.place}}.</p>
+                <div class="row justify-content-center mt-2 py-2 color-collapse-secundary font-weight-bold">
+                  Comentar
+                  <span class="mx-2 font-size-collapse">
+                    <span class="lnr lnr-bubble"></span>
+                  </span> Me gusta
+                  <span class="mx-2 font-size-collapse">
+                    <span class="lnr lnr-heart heart-color"></span>
+                  </span>
+                </div>
+              </div>
+            </ng-container>
+          </div>
+
+        </div>
+      </div>
+      <h6 class="p-2 my-3 font-weight-bold">Más Información</h6>
+      <div id="accordion1">
+        <div class="card">
+          <div class="card-header bg-tabs" id="headingOne">
+            <h5 class="mb-0">
+              <button class="btn btn-link bg-tabs font-size-collapse" data-toggle="collapse" data-target="#collapseRestaurant" aria-expanded="false"
+                aria-controls="collapseRestaurant">
+                Restaurantes
+              </button>
+            </h5>
+          </div>
+          <div id="collapseRestaurant" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+            <div class="card-body">
+              <h6>Restaurantes La Molina</h6>
+              <hr/>
+              <div class="row">
+                <ng-container *ngFor="let element of dataRestaurants.restaurants">
+                  <div class="">
+                    <div class="card-body">
+                      <h5 class="card-title">{{element.name}}</h5>
+                      <h6 class="card-subtitle mb-2 text-muted">Promedio de Precios: {{element.menuPrice}}</h6>
+                      <p class="card-text">Direccion: {{element.address}}</p>
+                    </div>
+                    <div class="food-img">
+                      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMuGdnOnMQ3uT09GcltzzFikaEK_K6vnAKDizz2G1fdms2lzSW5w" class="img-fluid"
+                        alt="">
+                    </div>
+                    <hr/>
+                  </div>
+                </ng-container>
+                <br>
+                <br>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header bg-tabs" id="headingTwo">
+            <h5 class="mb-0">
+              <button class="btn btn-link collapsed bg-tabs font-size-collapse" data-toggle="collapse" data-target="#collapseBenefit" aria-expanded="false"
+                aria-controls="collapseBenefit">
+                Beneficios
+              </button>
+            </h5>
+          </div>
+          <div id="collapseBenefit" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+            <ng-container *ngFor="let el of dataBenefit.benefits">
+
+              <div class="card-body border-bottom">
+                
+                <p class="text-center">{{el.disCountPercentage}}</p>
+                <p class="text-center">{{el.benefitName}}</p>
+                <p class="text-center">{{el.address}}</p>
+                <p class="text-center">{{el.branch}}</p>
+                
+              </div>
+            </ng-container>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

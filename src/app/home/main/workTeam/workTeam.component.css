@@ -1,0 +1,68 @@
+.business-tag {
+    cursor: pointer;
+}
+.business-logo {
+    width: 8.6em;
+    display: inline-block;
+}
+.tag-filter, .tag-filter button {
+    background-color: #FAFAFA;
+}
+.tag-filter {
+    padding: 0;
+}
+.title-teams {
+    color: #626262;
+    margin-left: 2em;
+}
+.teams {
+    padding-left: 3em;
+}
+.lnr-users {
+    color: #9AAE04;
+    font-size: 25px;
+    margin-right: 1.3em;
+}
+.scheme {
+    margin-bottom: 3em;
+    padding-bottom: 1em;
+    padding-top: 1em;
+}
+.workers {
+    margin: 1em 0;
+}
+.boss-email {
+    margin-bottom: 3em;
+}
+.name-boss {
+    margin-top: 1em;
+}
+.boss-info {
+    line-height: 10px;
+}
+.logo-title {
+    color: #626262;
+}
+.project-description {
+    line-height: 14px;
+    color: #626262;
+}
+.project-title {
+    line-height: 12px;
+    margin-top: 0.7em;
+    color: #626262;
+}
+.title-description {
+    font-size: 15px;
+}
+.teamTitle {
+    margin-top: 1em;
+    color: #333;
+}
+.title-team-scheme {
+    margin: 1em;
+}
+.circle, .circle img {
+    width: 10em;
+    border-radius: 50%;
+}

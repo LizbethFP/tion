@@ -1,0 +1,37 @@
+.bg {
+  height: 100vh;
+}
+
+.padding {
+  padding-right: 0px;
+  padding-left: 0px;
+}
+.nav-logo {
+  border-bottom: 1px solid #4f3d3d66;
+  background-color: white;
+}
+
+.bg-image {
+  background-image: url(https://image.freepik.com/free-photo/cheerful-coworkers-at-table-with-gadgets_23-2147656700.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.text-welcome {
+  color: #9BAE0C;
+}
+
+.box-form {
+  border:  2px solid #f8f9fa;
+  padding: 50px; 
+}
+
+.bg-btn {
+  background-color: #9BAE0C;
+  border: none;
+}
+
+.btn-submit {
+  justify-content: center;
+}

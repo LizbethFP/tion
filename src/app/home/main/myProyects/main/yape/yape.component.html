@@ -1,0 +1,54 @@
+<div class="container-fluid">
+    <div class="col-12 text-center">
+        <h5 class="box-title">Organigrama</h5>
+        <div class="row">
+          <div class="col-12">
+             <h6>Lider</h6>
+           <div class="boss-img">
+              <img class="circle" src="http://cultivatesocialmedia.com/wp-content/uploads/2016/02/Square-profile-pic-.jpg" alt="image-user">
+           </div>
+           <br>
+            <h5 class="info">{{empresaData.contactName}}</h5>   
+            <h6 class="info">{{empresaData.contactEmail}}</h6>
+          </div>
+          <div class="col-12">
+             <h6 class="workers-title">{{empresaData.squad1}}</h6>
+             <hr>
+             <br>
+             <div class="row">
+    
+                    <h5 class="text-center">Integrantes de tu squad: {{empresaData.colaborates[0]}}</h5>
+     
+             </div>
+          </div>
+        </div>
+   </div>
+   <hr/>
+      <div class="col-12 text-center">
+          <h5 class="box-title">Detalles: </h5>
+          <div class="tools-text text-left">
+            <p class="resumen-text"><span>Proyecto: {{empresaData.proyectName}}</span></p>
+            <p class="resumen-text"><span>Proyecto: {{empresaData.description}}</span></p>
+            <p class="resumen-text"><span>Inicio de Proyecto: {{empresaData.initialDate}} </span></p>
+            <p class="resumen-text"><span>Metodologia: {{empresaData.methodology}}</span></p>
+            <p class="resumen-text"><span>Stack: {{empresaData.stack}} </span></p>
+        </div>
+      </div>
+      <hr/>
+  <div class="col-12 text-center">
+    <div class="text-center">
+        <span class="lnr lnr-cog"></span><h5 class="box-title">Resumen</h5>
+    </div>
+          <button type="button" class="btn btn-secondary">Everis</button>
+          <button type="button" class="btn btn-secondary">Cliente</button>
+          <button type="button" class="btn btn-secondary">Utilitarios</button>
+          <button type="button" class="btn btn-secondary">Colaborativas</button>
+    </div>
+    <hr/>
+    <div class="col-12 text-center">
+        <div class="text-center">
+            <span class="lnr lnr-cog"></span><h5 class="box-title">Everis</h5>
+        </div>
+        <img class="everis-box-img" src="data:image/png;base64,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">
+        </div>
+</div>

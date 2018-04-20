@@ -1,0 +1,47 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-4">
+      <div class="card business-tag" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+        <img class="business-logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/BCP.svg/1200px-BCP.svg.png" alt="image-logo"><span class="lnr lnr-chevron-down"></span>
+      </div>
+      <div class="collapse" id="collapseExample">
+        <div class="card card-body tag-filter">
+          <div class="btn-group-vertical" role="group" aria-label="Basic example">
+            <div class="box-proyects">
+              <button type="button" class="btn btn-type">
+                            Asignados
+              </button>
+              <div class="bg-light btn-type">
+                              <p (click)="goYape()"><span class="lnr lnr-construction"></span> Yape</p>
+                              <p (click)="goBanca()"><span class="lnr lnr-construction"></span> Banca Online</p>
+              </div>
+            </div>
+            <div class="box-proyects">
+                        <button type="button" class="btn btn-type">Antiguos</button>
+            </div>
+            <div class="box-proyects">
+                        <button type="button" class="btn btn-type">No Asignados</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br>
+      <br>
+      <div class="card business-tag" data-toggle="collapse" href="#collapseExample2" role="button" aria-expanded="false" aria-controls="collapseExample">
+        <img class="business-logo" src="http://www.cal.org.pe/v1/wp-content/uploads/2015/11/noti374_bn-910x535.jpg" alt="image-logo"><span class="lnr lnr-chevron-down"></span>
+      </div>
+      <div class="collapse" id="collapseExample2">
+          <div class="card card-body tag-filter">
+            <div class="btn-group-vertical" role="group" aria-label="Basic example">
+              <button type="button" class="btn btn-type">Asignados</button>
+              <button type="button" class="btn btn-type">Antiguos</button>
+              <button type="button" class="btn btn-type">No Asignados</button>
+            </div>
+          </div>
+      </div>
+    </div>
+    <div class="card col-8">
+      <router-outlet></router-outlet>      
+    </div>
+  </div>
+</div>

@@ -1,0 +1,29 @@
+.business-tag {
+    cursor: pointer;
+}
+.business-logo {
+    width: 8.6em;
+    display: inline-block;
+}
+.tag-filter, .tag-filter button {
+    background-color: #EDEBEB;
+}
+.tag-filter {
+    padding: 0;
+}
+
+.box-proyects {
+    width: 100%;
+}
+
+.btn-type {
+    border-bottom: 1px solid black;
+}
+
+.bg-light p span {
+    padding-left: 20px;
+}
+
+span {
+    color: #9bae0c;
+}

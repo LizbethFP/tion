@@ -1,0 +1,45 @@
+.circle {
+    width: 5em;
+    height: 5em;
+    border-radius: 50%;
+}
+.profile-img {
+    display: block;
+}
+.boss-img {
+    margin-top: 2em;
+}
+.info {
+    font-size: 12px;
+    line-height: 12px;
+}
+.workers-title {
+    margin-top: 2em;
+}
+.circle-workers {
+    width: 3em;
+    height: 3em;
+    border-radius: 50%;
+}
+.info-email {
+    font-size: 10px;
+    line-height: 9px;
+}
+.tools-text {
+    line-height: 10px;
+}
+.tools-text span {
+    font-weight: 600;
+    font-size: 17px;
+    margin-right: 1em;
+}
+.tools-text {
+    margin-top: 2em;
+}
+.buttonsResume button {
+    display: block;
+    margin: 1em;
+}
+.everis-box-img {
+    margin: 2em;
+}

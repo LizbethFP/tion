@@ -1,0 +1,29 @@
+<div class="nav flex-column nav-pills d-none d-lg-block d-lg-none" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+  <a (click)="tabActive($event)" class="nav-link container-fluid rounded-0 text-uppercase active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true" routerLink="/home/house">
+    <div id="tag" class="tag"></div>
+    <div class="row">
+      <span class="col-12 text-center font-weight-bold icon-size">
+        <span class="lnr lnr-home"></span>         
+      </span>
+      <span class="col-12 text-center font-weight-bold">Home</span>      
+    </div>
+  </a>
+  <a (click)="tabActive1($event)" class="nav-link container-fluid rounded-0 text-uppercase" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="false" routerLink="/home/myProyects">
+    <div id="tag" class="tag d-none"></div>
+    <div class="row">
+        <span class="col-12 text-center font-weight-bold icon-size">
+          <span class="lnr lnr-pushpin"></span>        
+        </span>
+        <span class="col-12 text-center font-weight-bold">Proyectos</span>      
+    </div>
+  </a>
+  <a (click)="tabActive2($event)" class="nav-link container-fluid rounded-0 text-uppercase" id="v-pills-teams-tab" data-toggle="pill" href="#v-pills-teams" role="tab" aria-controls="v-pills-teams" aria-selected="false" routerLink="/home/workteam">
+    <div id="tag" class="tag d-none"></div>
+    <div class="row">
+      <span class="col-12 text-center font-weight-bold icon-size">
+        <span class="lnr lnr-users"></span> 
+      </span>
+      <span class="col-12 text-center font-weight-bold">Equipos</span>      
+    </div>
+  </a>
+</div>
